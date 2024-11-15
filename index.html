@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodluck Langga!</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff7eb3, #ff65a3, #ff4f92);
+            background-size: 400% 400%;
+            animation: gradientBackground 5s ease infinite;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        h1 {
+            font-size: 6em;
+            font-weight: 700;
+            letter-spacing: 5px;
+            color: #ffffff;
+            background: linear-gradient(45deg, #ff84e7, #ff9db7);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+        }
+        h1 span {
+            color: #fff;
+            font-size: 0.5em;
+            letter-spacing: 1px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.3);
+        }
+        .sparkle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0) 80%);
+            animation: sparkle 2s infinite ease-in-out;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); }
+            100% { text-shadow: 0 4px 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.7); }
+        }
+        @keyframes sparkle {
+            0% {
+                opacity: 0.8;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+            50% {
+                opacity: 0.4;
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+            100% {
+                opacity: 0.8;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Goodluck Langga! <span>✨</span></h1>
+    <div class="sparkle"></div>
+</div>
+
+</body>
+</html>
